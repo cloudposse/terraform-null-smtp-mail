@@ -49,5 +49,5 @@ variable "vars" {
 #   https://github.com/wrouesnel/emailcli
 variable "mail_command" {
   description = "Command to execute"
-  default = "email"
+  default     = "email"
 }

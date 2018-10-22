@@ -22,15 +22,16 @@ resource "random_id" "default" {
 }
 
 module "test" {
-  source = "../../"
-  from = "${var.from}"
-  to = "${var.to}"
+  source   = "../../"
+  from     = "${var.from}"
+  to       = "${var.to}"
   username = "${var.username}"
   password = "${var.password}"
-  body = "${file("message.tpl")}"
-  subject = "Test email $${random_id}"
+  body     = "${file("message.tpl")}"
+  subject  = "Test email $${random_id}"
+
   vars = {
     first_name = "John"
-    random_id = "${random_id.default.dec}"
+    random_id  = "${random_id.default.dec}"
   }
 }

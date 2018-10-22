@@ -43,5 +43,3 @@ resource "null_resource" "default" {
 
   depends_on = ["data.template_file.body", "data.template_file.subject"]
 }
-
-
