@@ -31,6 +31,19 @@ related to the `apply` phase. For example, notifying a user of their [IAM user a
 
 **NOTE:** The `null` refers to the primary Terraform [provider](https://www.terraform.io/docs/providers/null/index.html) used in this module.
 
+## Dependencies
+
+  First install the latest release of the `email` cli tool here: https://github.com/wrouesnel/emailcli/releases
+
+  Make sure it exists in your `PATH` (E.g. `/usr/local/bin`)
+
+  We distribute an Alpine Linux package (`emailcli`) as part of our [toolchain](https://github.com/cloudposse/packages).
+
+  ```
+  curl -sSL https://apk.cloudposse.com/install.sh | sudo bash
+  apk add emailcli@cloudposse
+  ```
+
 ## Usage
 
 
