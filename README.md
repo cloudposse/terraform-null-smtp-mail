@@ -66,6 +66,7 @@ module "welcome" {
   }
 }
 ```
+
 __NOTE:__ Use the `file(...)` interpolation function to use a template file. 
 
 
