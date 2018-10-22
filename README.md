@@ -54,7 +54,7 @@ module "welcome" {
   host       = "smtp.mailgun.org"
   port       = "587"
   username   = "postmaster@ourdomain.com"
-  password   = "secret"
+  password   = "changeme"
   from       = "admin@yourdomain.com"
   to         = ["example@yourdomain.com"]
   subject    = "Welcome $${first_name}"
