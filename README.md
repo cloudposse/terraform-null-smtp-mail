@@ -24,6 +24,12 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 
 
+## Introduction
+
+This terraform module uses an external command using the [`local-exec`](https://www.terraform.io/docs/provisioners/local-exec.html) provisioner to send emails. It's ideally suited for sending transactional emails
+related to the `apply` phase. For example, notifying a user of their [IAM user account](https://github.com/cloudposse/terraform-aws-iam-user) getting created or the deployment of a new [ECS application](https://github.com/cloudposse/terraform-aws-ecs-web-app).
+
+**NOTE:** The `null` refers to the primary Terraform [provider](https://www.terraform.io/docs/providers/null/index.html) used in this module.
 
 ## Usage
 
