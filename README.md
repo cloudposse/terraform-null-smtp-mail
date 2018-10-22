@@ -58,10 +58,11 @@ module "welcome" {
   from       = "admin@yourdomain.com"
   to         = ["example@yourdomain.com"]
   subject    = "Welcome $${first_name}"
-  body       = "Your account has been created. Login here: $$"
+  body       = "Your account has been created. Login here: $${homepage}"
 
   vars = {
     first_name = "Example"
+    homepage   = "https://cloudposse.com"
   }
 }
 ```
