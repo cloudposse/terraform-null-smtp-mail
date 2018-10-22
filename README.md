@@ -47,7 +47,6 @@ related to the `apply` phase. For example, notifying a user of their [IAM user a
 ## Usage
 
 
-
 ```hcl
 module "welcome" {
   source     = "git::https://github.com/cloudposse/terraform-null-smtp-mail.git?ref=master"

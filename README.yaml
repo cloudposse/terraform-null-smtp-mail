@@ -62,7 +62,6 @@ introduction: |-
 # How to use this project
 usage: |-
 
-
   ```hcl
   module "welcome" {
     source     = "git::https://github.com/cloudposse/terraform-null-smtp-mail.git?ref=master"
