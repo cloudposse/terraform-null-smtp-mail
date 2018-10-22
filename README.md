@@ -3,7 +3,7 @@
 
 [![Cloud Posse](https://cloudposse.com/logo-300x69.svg)](https://cloudposse.com)
 
-# terraform-null-smtp-mail [![Build Status](https://travis-ci.org/cloudposse/terraform-aws-iam-system-user.svg?branch=master)](https://travis-ci.org/cloudposse/terraform-aws-iam-system-user) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-iam-system-user.svg)](https://github.com/cloudposse/terraform-aws-iam-system-user/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+# terraform-null-smtp-mail [![Build Status](https://travis-ci.org/cloudposse/terraform-null-smtp-mail.svg?branch=master)](https://travis-ci.org/cloudposse/terraform-null-smtp-mail) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-null-smtp-mail.svg)](https://github.com/cloudposse/terraform-null-smtp-mail/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform Module to send emails using an SMTP server by calling an external `email` command.

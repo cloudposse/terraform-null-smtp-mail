@@ -16,11 +16,11 @@ github_repo: cloudposse/terraform-null-smtp-mail
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://travis-ci.org/cloudposse/terraform-aws-iam-system-user.svg?branch=master"
-    url: "https://travis-ci.org/cloudposse/terraform-aws-iam-system-user"
+    image: "https://travis-ci.org/cloudposse/terraform-null-smtp-mail.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/terraform-null-smtp-mail"
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-aws-iam-system-user.svg"
-    url: "https://github.com/cloudposse/terraform-aws-iam-system-user/releases/latest"
+    image: "https://img.shields.io/github/release/cloudposse/terraform-null-smtp-mail.svg"
+    url: "https://github.com/cloudposse/terraform-null-smtp-mail/releases/latest"
   - name: "Slack Community"
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
