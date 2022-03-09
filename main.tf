@@ -28,7 +28,7 @@ resource "null_resource" "default" {
   provisioner "local-exec" {
     command = "${local.command}"
 
-    environment {
+    environment = {
       EMAIL_FROM     = "${var.from}"
       EMAIL_SUBJECT  = "${local.subject}"
       EMAIL_BODY     = "${local.body}"
