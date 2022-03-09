@@ -38,8 +38,8 @@ resource "null_resource" "default" {
       EMAIL_PASSWORD = "${var.password}"
     }
 
-    on_failure = "fail"
+    on_failure = fail
   }
 
-  depends_on = ["data.template_file.body", "data.template_file.subject"]
+  depends_on = [data.template_file.body, data.template_file.subject]
 }
