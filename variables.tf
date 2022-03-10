@@ -45,6 +45,12 @@ variable "vars" {
   default     = {}
 }
 
+variable "html" {
+  description = "Encode mail as html"
+  type        = bool
+  default     = false
+}
+
 # We recommend the following tool:
 #   https://github.com/wrouesnel/emailcli
 variable "mail_command" {

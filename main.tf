@@ -36,6 +36,7 @@ resource "null_resource" "default" {
       EMAIL_HOST     = "${var.host}"
       EMAIL_USERNAME = "${var.username}"
       EMAIL_PASSWORD = "${var.password}"
+      EMAIL_HTML     = "${var.html}"
     }
 
     on_failure = fail
