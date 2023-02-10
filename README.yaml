@@ -26,11 +26,6 @@ badges:
     url: "https://slack.cloudposse.com"
 
 related:
-  - name: "terraform-aws-iam-user"
-    description: "Terraform module to provision an IAM user account for humans and associate it with IAM groups"
-    url: "https://github.com/cloudposse/terraform-aws-iam-user"
-
-related:
   - name: "emailcli"
     description: "12-factor compatible command line tool for sending emails that is written in Go."
     url: "https://github.com/wrouesnel/emailcli"
