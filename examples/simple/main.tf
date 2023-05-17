@@ -4,17 +4,17 @@ variable "from" {
 
 variable "to" {
   description = "Email recipients"
-  type        = "list"
+  type        = list(string)
 }
 
 variable "username" {
   description = "Username to authenticate with the SMTP server"
-  type        = "string"
+  type        = string
 }
 
 variable "password" {
   description = "Password to authenticate with the SMTP server"
-  type        = "string"
+  type        = string
 }
 
 resource "random_id" "default" {
@@ -23,11 +23,11 @@ resource "random_id" "default" {
 
 module "test" {
   source   = "../../"
-  from     = "${var.from}"
-  to       = "${var.to}"
-  username = "${var.username}"
-  password = "${var.password}"
-  body     = "${file("message.tpl")}"
+  from     = var.from
+  to       = var.to
+  username = var.username
+  password = var.password
+  body     = file("message.tpl")
   subject  = "Test email $${random_id}"
 
   vars = {

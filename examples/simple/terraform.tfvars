@@ -1,7 +1,7 @@
-from = "ops@cloudposse.com"
-to = ["erik@cloudposse.com"]
+from    = "ops@cloudposse.com"
+to      = ["erik@cloudposse.com"]
 subject = "Test email"
-body = "Hello ${first_name}"
+body    = "Hello ${first_name}"
 vars = {
   first_name = "Erik"
 }
