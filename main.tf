@@ -1,6 +1,5 @@
 data "template_file" "body" {
   template = var.body
-
   vars = var.vars
 }
 
