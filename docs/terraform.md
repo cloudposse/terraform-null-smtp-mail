@@ -34,7 +34,7 @@ No modules.
 | <a name="input_password"></a> [password](#input\_password) | Password to authenticate with the SMTP server | `string` | n/a | yes |
 | <a name="input_port"></a> [port](#input\_port) | SMTP Port | `string` | `"587"` | no |
 | <a name="input_subject"></a> [subject](#input\_subject) | Email subject template | `any` | n/a | yes |
-| <a name="input_to"></a> [to](#input\_to) | Email recipients | `list` | n/a | yes |
+| <a name="input_to"></a> [to](#input\_to) | Email recipients | `list(string)` | n/a | yes |
 | <a name="input_username"></a> [username](#input\_username) | Username to authenticate with the SMTP server | `string` | n/a | yes |
 | <a name="input_vars"></a> [vars](#input\_vars) | Parameters to pass to the body template | `map` | `{}` | no |
 
