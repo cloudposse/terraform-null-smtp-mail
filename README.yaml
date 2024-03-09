@@ -1,4 +1,3 @@
----
 #
 # This is the canonical configuration for the `README.md`
 # Run `make readme` to rebuild the `README.md`
@@ -15,16 +14,17 @@ github_repo: cloudposse/terraform-null-smtp-mail
 
 # Badges to display
 badges:
-  - name: "Build Status"
-    image: "https://travis-ci.org/cloudposse/terraform-null-smtp-mail.svg?branch=master"
-    url: "https://travis-ci.org/cloudposse/terraform-null-smtp-mail"
-  - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-null-smtp-mail.svg"
-    url: "https://github.com/cloudposse/terraform-null-smtp-mail/releases/latest"
-  - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
+  - name: Latest Release
+    image: https://img.shields.io/github/release/cloudposse/terraform-null-smtp-mail.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-null-smtp-mail/releases/latest
+  - name: Last Updated
+    image: https://img.shields.io/github/last-commit/cloudposse/terraform-null-smtp-mail.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-null-smtp-mail/commits
+  - name: Slack Community
+    image: https://slack.cloudposse.com/for-the-badge.svg
+    url: https://slack.cloudposse.com
 
+# List any related terraform modules that this module may be used with or that this module depends on.
 related:
   - name: "emailcli"
     description: "12-factor compatible command line tool for sending emails that is written in Go."
@@ -38,7 +38,7 @@ description: |-
 introduction: |-
   This terraform module uses an external command using the [`local-exec`](https://www.terraform.io/docs/provisioners/local-exec.html) provisioner to send emails. It's ideally suited for sending transactional emails
   related to the `apply` phase. For example, notifying a user of their [IAM user account](https://github.com/cloudposse/terraform-aws-iam-user) getting created or the deployment of a new [ECS application](https://github.com/cloudposse/terraform-aws-ecs-web-app).
-  
+
   **NOTE:** The `null` refers to the primary Terraform [provider](https://www.terraform.io/docs/providers/null/index.html) used in this module.
 
   ## Dependencies
@@ -55,7 +55,7 @@ introduction: |-
     ```
 
 # How to use this project
-usage: |-
+usage: |2-
 
   ```hcl
   module "welcome" {
@@ -83,11 +83,4 @@ include:
   - "docs/terraform.md"
 
 # Contributors to this project
-contributors:
-  - name: "Erik Osterman"
-    github: "osterman"
-  - name: "Igor Rodionov"
-    github: "goruha"
-  - name: "Andriy Knysh"
-    github: "aknysh"
-
+contributors: []
