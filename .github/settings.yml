@@ -5,3 +5,4 @@ repository:
   description: Terraform module to send transactional emails via an SMTP server (e.g. mailgun)
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-module, email, mail, mail-sender, smtp, mailgun, transactional-emails
+
